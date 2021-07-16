@@ -5,9 +5,13 @@ import (
   "time"
 )
 
+var sessionCount int
+
 func main() {
+	sessionCount = 0
 	workTimer(2)
 	breakTimer(2)
+	sessionCount++
 }
 
 func breakTimer(breakTime int) {
