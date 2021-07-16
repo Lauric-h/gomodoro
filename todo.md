@@ -1,6 +1,6 @@
 - [] Afficher les chiffres qui décomptent
 - [] Gérer les minutes 
-- [] Gérer les heures
 - [] Prompt user pour restart
 - [] ajout pause  
 - [] add flags/subcommand pour temps
+- [] logger dans un fichier txt la session
