@@ -14,13 +14,13 @@ var (
 func main() {
 	for
 	{
+		sessionCount++
+		fmt.Println("Session number ", sessionCount)
 		workTimer(workTime)
 		if sessionCount == 4 {
 			breakTime = 4
 		}
 		breakTimer(breakTime)
-		sessionCount++
-		fmt.Println("count ", sessionCount)
 	}
 }
 

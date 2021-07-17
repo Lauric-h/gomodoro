@@ -2,8 +2,7 @@ Delete when project done
 ## Specs and todos
 - [X] Afficher les chiffres qui décomptent
 - [X] Gérer les minutes 
-- [] Gestion des long break  
-- [] Prompt user pour restart ou restart auto après fin de pause?
+- [X] Gestion des long break  
 - [X] ajout pause  
 - [] logger dans un fichier txt la session
 - [] Ajout style avec Pterm
@@ -20,15 +19,18 @@ au lancement, worktimer de 25minutes et pause de 5 min
 Ajout des long break
 Pas de choix de temps  
 Pas de touche pour arrêter  
-Pas de log du nombre de session  
-Style avec Pterm
+Pas de log du nombre de session
 
 ### Deuxieme itération
 Arreter a tout moment via touches pour quitter / pause  
-Changer le temps des pauses courtes/pauses longues/worktimer au démarrage  
+Changer le temps des pauses courtes/pauses longues/worktimer au démarrage
 
 ### Troisième itération
 Logger les sessions dans un fichier  
 Définir un temps total au démarrage  
 Possibilité d'afficher les logs/stats  
+
+### Quatrième itération
+Ajout alertes/notif + possibilité de disables
+Style avec Pterm
 
