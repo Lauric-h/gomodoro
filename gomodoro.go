@@ -5,17 +5,27 @@ import (
   "time"
 )
 
-var sessionCount int
+var (
+	breakTime int = 2
+	workTime int = 2
+	sessionCount int = 0
+)
 
 func main() {
-	sessionCount = 0
-	workTimer(2)
-	breakTimer(2)
-	sessionCount++
+	for
+	{
+		workTimer(workTime)
+		if sessionCount == 4 {
+			breakTime = 4
+		}
+		breakTimer(breakTime)
+		sessionCount++
+		fmt.Println("count ", sessionCount)
+	}
 }
 
 func breakTimer(breakTime int) {
-	fmt.Println("Starting break...")
+	fmt.Printf("Starting %d minutes break...\n", breakTime)
 	for breakTime >= 0 {
 		for i := 10; i >= 0; i-- {
 			fmt.Printf("\033[2K\r%02d:%02d", breakTime, i)
