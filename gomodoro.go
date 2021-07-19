@@ -1,24 +1,31 @@
 package main
 
 import (
-  "fmt"
-  "time"
+	"flag"
+	"fmt"
+	"time"
 )
 
 var (
-	breakTime int = 2
-	workTime int = 2
 	sessionCount int = 0
 )
 
 func main() {
+	workPtr := flag.Int("work",  2, "Duration of the work session")
+	shortPtr := flag.Int("short", 2, "Duration of the short breaks")
+	longPtr := flag.Int("long", 4, "Duration of the long breaks")
+
+	flag.Parse()
+
+	breakTime := *shortPtr
+
 	for
 	{
 		sessionCount++
 		fmt.Println("Session number ", sessionCount)
-		workTimer(workTime)
-		if sessionCount == 4 {
-			breakTime = 4
+		workTimer(*workPtr)
+		if sessionCount % 4 == 0 {
+			breakTime = *longPtr
 		}
 		breakTimer(breakTime)
 	}
@@ -27,7 +34,7 @@ func main() {
 func breakTimer(breakTime int) {
 	fmt.Printf("Starting %d minutes break...\n", breakTime)
 	for breakTime >= 0 {
-		for i := 10; i >= 0; i-- {
+		for i := 2; i >= 0; i-- {
 			fmt.Printf("\033[2K\r%02d:%02d", breakTime, i)
 			time.Sleep(time.Second)
 		}
