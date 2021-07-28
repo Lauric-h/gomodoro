@@ -8,6 +8,7 @@ import (
 
 var (
 	sessionCount int = 0
+	totalSessionCount int = 0
 )
 
 func main() {
@@ -17,14 +18,15 @@ func main() {
 
 	flag.Parse()
 
-	breakTime := *shortPtr
-
 	for
 	{
+		breakTime := *shortPtr
 		sessionCount++
-		fmt.Println("Session number ", sessionCount)
+		totalSessionCount++
+		fmt.Println("Session number ", totalSessionCount)
 		workTimer(*workPtr)
-		if sessionCount % 4 == 0 {
+		if sessionCount == 4 {
+			sessionCount = 0
 			breakTime = *longPtr
 		}
 		breakTimer(breakTime)
@@ -33,12 +35,15 @@ func main() {
 
 func breakTimer(breakTime int) {
 	fmt.Printf("Starting %d minutes break...\n", breakTime)
-	for breakTime >= 0 {
+	fmt.Printf("\033[2K\r%02d:00", breakTime)
+	time.Sleep(time.Second)
+	remainingTime := breakTime - 1
+	for remainingTime >= 0 {
 		for i := 2; i >= 0; i-- {
-			fmt.Printf("\033[2K\r%02d:%02d", breakTime, i)
+			fmt.Printf("\033[2K\r%02d:%02d", remainingTime, i)
 			time.Sleep(time.Second)
 		}
-		breakTime--
+		remainingTime--
 	}
 	fmt.Println()
 	fmt.Println("Break is over, get back to work")
@@ -46,12 +51,15 @@ func breakTimer(breakTime int) {
 
 func workTimer(workTime int) {
 	fmt.Println("Starting work session...")
-	for workTime >= 0 {
+	fmt.Printf("\033[2K\r%02d:00", workTime)
+	time.Sleep(time.Second)
+	remainingTime := workTime - 1
+	for remainingTime >= 0 {
 		for i := 10; i >= 0; i-- {
-			fmt.Printf("\033[2K\r%02d:%02d", workTime, i)
+			fmt.Printf("\033[2K\r%02d:%02d", remainingTime, i)
 			time.Sleep(time.Second)
 		}
-		workTime--
+		remainingTime--
 	}
 	fmt.Println()
 	fmt.Println("Work session is over, time for a break!")

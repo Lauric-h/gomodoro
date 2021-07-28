@@ -4,8 +4,9 @@ Delete when project done
 - [X] Gérer les minutes 
 - [X] Gestion des long break  
 - [X] ajout pause
-- [] Régler départ horloge
-- [] Régler les long break tous les multiples de 4
+- [X] Régler départ horloge
+- [X] Régler les long break tous les multiples de 4
+- [] Ajout temps maximum (60 minutes)
 - [] logger dans un fichier txt la session
 - [] Ajout style avec Pterm
 - [] Ajout touche pour quitter  
@@ -26,7 +27,6 @@ Pas de log du nombre de session
 ### Deuxieme itération
 Arreter a tout moment via touches pour quitter / pause  
 Changer le temps des pauses courtes/pauses longues/worktimer au démarrage
-
 
 ### Troisième itération
 Logger les sessions dans un fichier  
