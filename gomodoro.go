@@ -3,6 +3,7 @@ package main
 import (
 	"flag"
 	"fmt"
+	"log"
 	"time"
 )
 
@@ -17,6 +18,14 @@ func main() {
 	longPtr := flag.Int("long", 4, "Duration of the long breaks")
 
 	flag.Parse()
+
+	if *workPtr > 60 || *shortPtr > 60 || *longPtr > 60 {
+		log.Fatal("Invalid time input. Cannot be more than 60 minutes.")
+	}
+
+	if *workPtr < 0 || *shortPtr < 0 || *longPtr < 0 {
+		log.Fatal("Invalid time input. Cannot be negative.")
+	}
 
 	for
 	{

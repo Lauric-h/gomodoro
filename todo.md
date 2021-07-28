@@ -16,6 +16,7 @@ Delete when project done
 - [X] add flags/subcommand pour temps de pause
 - [X] add flags/subcommand pour temps de travail
 - [] add README
+- [] Refactor - utiliser stdlib time ?
 
 ### Première itération : 
 au lancement, worktimer de 25minutes et pause de 5 min  
@@ -37,3 +38,4 @@ Possibilité d'afficher les logs/stats
 Ajout alertes/notif + possibilité de disables
 Style avec Pterm
 Ajout help
+
