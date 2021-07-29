@@ -6,7 +6,8 @@ Delete when project done
 - [X] ajout pause
 - [X] Régler départ horloge
 - [X] Régler les long break tous les multiples de 4
-- [] Ajout temps maximum (60 minutes)
+- [X] Ajout temps maximum (60 minutes)
+- [] Checker si trop d'arguments 
 - [] logger dans un fichier txt la session
 - [] Ajout style avec Pterm
 - [] Ajout touche pour quitter  

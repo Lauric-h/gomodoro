@@ -3,7 +3,9 @@ package main
 import (
 	"flag"
 	"fmt"
+	"github.com/gdamore/tcell"
 	"log"
+	"os"
 	"time"
 )
 
@@ -26,6 +28,43 @@ func main() {
 	if *workPtr < 0 || *shortPtr < 0 || *longPtr < 0 {
 		log.Fatal("Invalid time input. Cannot be negative.")
 	}
+
+	s, err := tcell.NewScreen()
+	if err != nil {
+		log.Fatalf("%+v", err)
+	}
+	if err := s.Init(); err != nil {
+		log.Fatalf("%+v", err)
+	}
+
+	// Set default text style
+	defStyle := tcell.StyleDefault.Background(tcell.ColorBlack).Foreground(tcell.ColorWhite)
+	s.SetStyle(defStyle)
+
+	// Clear screen
+	s.Clear()
+
+	quit := func() {
+		s.Fini()
+		os.Exit(0)
+	}
+
+	for {
+		s.Show()
+		// Poll event
+		ev := s.PollEvent()
+
+		// Process event
+		switch ev := ev.(type) {
+		case *tcell.EventResize:
+			s.Sync()
+		case *tcell.EventKey:
+			if ev.Key() == tcell.KeyEscape || ev.Key() == tcell.KeyCtrlC {
+				quit()
+			}
+		}
+	}
+
 
 	for
 	{
