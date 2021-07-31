@@ -8,13 +8,9 @@ import (
 )
 
 var (
-	sessionCount      = 0
-	totalSessionCount = 0
-	breakTime int
-	workTime int
-	longBreak int
+	sessionCount = 0
+	w WorkSession
 )
-
 
 func main() {
 
@@ -47,17 +43,15 @@ func main() {
 				}
 			}()
 
-			breakTime := breakTime
+			breakTime := w.shortBreak
 			sessionCount++
-			totalSessionCount++
-			fmt.Println("Session number ", totalSessionCount)
-			workTimer(workTime)
+			w.count++
+			fmt.Println("Session number ", w.count)
+			w.WorkTimer()
 			if sessionCount == 4 {
 				sessionCount = 0
-				breakTime = longBreak
+				breakTime = w.longBreak
 			}
-			breakTimer(breakTime)
-
-
+			w.BreakTimer(breakTime)
 		}
 }

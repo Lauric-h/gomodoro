@@ -6,22 +6,18 @@ Delete when project done
 - [X] ajout pause
 - [X] Régler départ horloge
 - [X] Régler les long break tous les multiples de 4
-- [X] Ajout temps maximum (60 minutes)
-<<<<<<< HEAD
-=======
-- [] Ecriture texte sur box tcell avec coord 
-- [] Checker si trop d'arguments 
->>>>>>> quitkey
+- [X] Ajout temps maximum (60 minutes)rd 
+- [X] Checker si trop d'arguments
 - [] logger dans un fichier txt la session
 - [] Ajout style avec Pterm
-- [] Ajout touche pour quitter  
+- [X] Ajout touche pour quitter  
 - [] Ajout touche pour arreter  ?
 - [] Ajout touche pour mettre en pause/restart  
 - [] add flags/subcommand pour temps total
 - [X] add flags/subcommand pour temps de pause
 - [X] add flags/subcommand pour temps de travail
 - [] add README
-- [] quitter proprement le programme 
+- [] quitter proprement le programme -> ecrire la duree, sessions etc.
 - [] Refactor - utiliser stdlib time ?
 
 ### Première itération : 

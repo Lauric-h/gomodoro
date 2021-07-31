@@ -2,6 +2,7 @@ package main
 
 import (
 	"flag"
+	"fmt"
 	"log"
 )
 
@@ -12,15 +13,25 @@ func init() {
 
 	flag.Parse()
 
+	// Timer cannot be set for more than 60 minutes
 	if *workPtr > 60 || *shortPtr > 60 || *longPtr > 60 {
 		log.Fatal("Invalid time input. Cannot be more than 60 minutes.")
 	}
 
-	if *workPtr < 0 || *shortPtr < 0 || *longPtr < 0 {
-		log.Fatal("Invalid time input. Cannot be negative.")
+	// Timer cannot be set for less than 1 minute
+	if *workPtr < 1 || *shortPtr < 1 || *longPtr < 1 {
+		log.Fatal("Invalid time input. Cannot be less than 1 minute.")
 	}
 
-	breakTime = *shortPtr
-	longBreak = *longPtr
-	workTime = *workPtr
+	// Refuse other command line arguments
+	if len(flag.Args()) >= 1 {
+		for _, value := range flag.Args() {
+			fmt.Printf("Invalid argument: %v\n", value)
+		}
+		log.Fatal("Exiting... Too many arguments")
+	}
+
+	w.shortBreak = *shortPtr
+	w.longBreak = *longPtr
+	w.workTime = *workPtr
 }
