@@ -3,6 +3,7 @@ package main
 import (
 	"flag"
 	"fmt"
+	"github.com/MarinX/keylogger"
 	"log"
 	"time"
 )
@@ -27,6 +28,60 @@ func main() {
 		log.Fatal("Invalid time input. Cannot be negative.")
 	}
 
+	// ------------------------
+
+	// find keyboard device, does not require a root permission
+	keyboard := keylogger.FindKeyboardDevice()
+
+	// check if we found a path to keyboard
+	if len(keyboard) <= 0 {
+		fmt.Println("No keyboard found...you will need to provide manual input path")
+		return
+	}
+
+	fmt.Println("Found a keyboard at", keyboard)
+	// init keylogger with keyboard
+	k, err := keylogger.New(keyboard)
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
+	defer k.Close()
+
+	events := k.Read()
+
+	// range of events
+	for e := range events {
+		switch e.Type {
+		// EvKey is used to describe state changes of keyboards, buttons, or other key-like devices.
+		// check the input_event.go for more events
+		case keylogger.EvKey:
+
+			// if the state of key is pressed
+			if e.KeyPress() {
+				fmt.Println("[event] press key ", e.KeyString())
+			}
+
+			// if the state of key is released
+			if e.KeyRelease() {
+				fmt.Println("[event] release key ", e.KeyString())
+			}
+
+			break
+		}
+		breakTime := *shortPtr
+		sessionCount++
+		totalSessionCount++
+		fmt.Println("Session number ", totalSessionCount)
+		workTimer(*workPtr)
+		if sessionCount == 4 {
+			sessionCount = 0
+			breakTime = *longPtr
+		}
+		breakTimer(breakTime)
+	}
+
+	// ------------------------
 	for
 	{
 		breakTime := *shortPtr
