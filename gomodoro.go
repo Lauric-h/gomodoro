@@ -3,8 +3,9 @@ package main
 import (
 	"flag"
 	"fmt"
-	"github.com/MarinX/keylogger"
+	"github.com/mattn/go-tty"
 	"log"
+	"os"
 	"time"
 )
 
@@ -30,56 +31,56 @@ func main() {
 
 	// ------------------------
 
-	// find keyboard device, does not require a root permission
-	keyboard := keylogger.FindKeyboardDevice()
-
-	// check if we found a path to keyboard
-	if len(keyboard) <= 0 {
-		fmt.Println("No keyboard found...you will need to provide manual input path")
-		return
-	}
-
-	fmt.Println("Found a keyboard at", keyboard)
-	// init keylogger with keyboard
-	k, err := keylogger.New(keyboard)
+	tity, err := tty.Open()
 	if err != nil {
-		fmt.Println(err)
-		return
+		log.Fatal(err)
 	}
-	defer k.Close()
+	defer tity.Close()
 
-	events := k.Read()
+	//for {
+	//	r, err := tity.ReadRune()
+	//	if err != nil {
+	//		log.Fatal(err)
+	//	}
+	//	// handle key event
+	//	fmt.Println(string(r))
+	//
+	//}
 
-	// range of events
-	for e := range events {
-		switch e.Type {
-		// EvKey is used to describe state changes of keyboards, buttons, or other key-like devices.
-		// check the input_event.go for more events
-		case keylogger.EvKey:
+	// ------------------
 
-			// if the state of key is pressed
-			if e.KeyPress() {
-				fmt.Println("[event] press key ", e.KeyString())
+		for {
+			go func() {
+				r, err := tity.ReadRune()
+				fmt.Println(r)
+				if err != nil {
+					fmt.Println(err)
+				}
+				// exit
+				switch r {
+					case 99:
+						fmt.Println(string(r))
+						os.Exit(1)
+					case 112:
+						fmt.Println(string(r))
+						fmt.Println("pause")
+				}
+			}()
+
+
+			breakTime := *shortPtr
+			sessionCount++
+			totalSessionCount++
+			fmt.Println("Session number ", totalSessionCount)
+			workTimer(*workPtr)
+			if sessionCount == 4 {
+				sessionCount = 0
+				breakTime = *longPtr
 			}
-
-			// if the state of key is released
-			if e.KeyRelease() {
-				fmt.Println("[event] release key ", e.KeyString())
-			}
-
-			break
+			breakTimer(breakTime)
 		}
-		breakTime := *shortPtr
-		sessionCount++
-		totalSessionCount++
-		fmt.Println("Session number ", totalSessionCount)
-		workTimer(*workPtr)
-		if sessionCount == 4 {
-			sessionCount = 0
-			breakTime = *longPtr
-		}
-		breakTimer(breakTime)
-	}
+
+
 
 	// ------------------------
 	for
