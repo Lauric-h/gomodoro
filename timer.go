@@ -5,27 +5,35 @@ import (
 	"time"
 )
 
-type countdown struct {
-	h int
-	m int
-	s int
+
+func breakTimer(breakTime int) {
+	fmt.Printf("Starting %d minutes break...\n", breakTime)
+	fmt.Printf("\033[2K\r%02d:00", breakTime)
+	time.Sleep(time.Second)
+	remainingTime := breakTime - 1
+	for remainingTime >= 0 {
+		for i := 2; i >= 0; i-- {
+			fmt.Printf("\033[2K\r%02d:%02d", remainingTime, i)
+			time.Sleep(time.Second)
+		}
+		remainingTime--
+	}
+	fmt.Println()
+	fmt.Println("Break is over, get back to work")
 }
 
-func clock(workTimer int, breakTimer int) {
-	for i:= workTimer; i>=0; i-- {
-		fmt.Printf("\033[2K\r%d", i)
-		time.Sleep(1 * time.Second)
+func workTimer(workTime int) {
+	fmt.Println("Starting work session...")
+	fmt.Printf("\033[2K\r%02d:00", workTime)
+	time.Sleep(time.Second)
+	remainingTime := workTime - 1
+	for remainingTime >= 0 {
+		for i := 10; i >= 0; i-- {
+			fmt.Printf("\033[2K\r%02d:%02d", remainingTime, i)
+			time.Sleep(time.Second)
+		}
+		remainingTime--
 	}
 	fmt.Println()
-	fmt.Println("time for a break")
-
-	for i:= breakTimer; i>=0; i-- {
-		fmt.Printf("\033[2K\r%d", i)
-		time.Sleep(time.Second)
-	}
-
-	fmt.Println()
-	fmt.Println("break is over")
-
-	fmt.Println()
+	fmt.Println("Work session is over, time for a break!")
 }
