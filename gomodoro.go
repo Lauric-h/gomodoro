@@ -1,11 +1,9 @@
 package main
 
 import (
-	"fmt"
 	"github.com/gdamore/tcell/v2"
 	"log"
 	"os"
-	"time"
 )
 
 var (
@@ -21,18 +19,10 @@ var (
 func main() {
 	//for
 	//{
-		sessionCount++
-		totalSessionCount++
-		printSession := fmt.Sprintf("Session number %v", totalSessionCount)
-		//fmt.Println("Session number ", totalSessionCount)
-		workTimer(1)
-		if sessionCount == 4 {
-		sessionCount = 0
-		breakTime = longBreak
-		}
-		breakTimer(1)
+
 	//}
 
+	// Initialize styles
 	defStyle := tcell.StyleDefault.Background(tcell.ColorReset).Foreground(tcell.ColorReset)
 	boxStyle := tcell.StyleDefault.Foreground(tcell.ColorWhite).Background(tcell.ColorPurple)
 
@@ -45,16 +35,10 @@ func main() {
 		log.Fatalf("%+v", err)
 	}
 	s.SetStyle(defStyle)
-	s.EnableMouse()
-	s.EnablePaste()
 	s.Clear()
 
-	// Draw initial boxes
-	drawBox(s, 1, 1, 42, 7, boxStyle, printSession)
-	time.Sleep(time.Second * 3)
-	//drawBox(s, 1, 1, 42, 7, boxStyle, "coucou")
-	time.Sleep(time.Second * 3)
-	drawText(s, 2, 2, 32, 14, boxStyle, "Cuciui")
+
+
 
 	// Event loop
 	quit := func() {
@@ -82,6 +66,23 @@ func main() {
 			}
 
 		}
+
+		// timer
+		sessionCount++
+		totalSessionCount++
+		//printSession := fmt.Sprintf("Session number %v", totalSessionCount)
+		//drawText(s, 2, 2, 32, 14, boxStyle, printSession)
+		breakTimer(1, s, boxStyle)
+
+
+		//fmt.Println("Session number ", totalSessionCount)
+		//workTimer(1)
+		//if sessionCount == 4 {
+		//	sessionCount = 0
+		//	breakTime = longBreak
+		//}
+		//breakTimer(1)
+
 
 	}
 }
