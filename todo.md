@@ -6,7 +6,7 @@ Delete when project done
 - [X] ajout pause
 - [X] Régler départ horloge
 - [X] Régler les long break tous les multiples de 4
-- [] Ajout temps maximum (60 minutes)
+- [X] Ajout temps maximum (60 minutes)
 - [] logger dans un fichier txt la session
 - [] Ajout style avec Pterm
 - [] Ajout touche pour quitter  
@@ -16,6 +16,7 @@ Delete when project done
 - [X] add flags/subcommand pour temps de pause
 - [X] add flags/subcommand pour temps de travail
 - [] add README
+- [] quitter proprement le programme 
 - [] Refactor - utiliser stdlib time ?
 
 ### Première itération : 

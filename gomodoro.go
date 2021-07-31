@@ -10,8 +10,8 @@ import (
 )
 
 var (
-	sessionCount int = 0
-	totalSessionCount int = 0
+	sessionCount      = 0
+	totalSessionCount = 0
 )
 
 func main() {
@@ -31,21 +31,12 @@ func main() {
 
 	// ------------------------
 
+	// Open keypress listener
 	tity, err := tty.Open()
 	if err != nil {
 		log.Fatal(err)
 	}
 	defer tity.Close()
-
-	//for {
-	//	r, err := tity.ReadRune()
-	//	if err != nil {
-	//		log.Fatal(err)
-	//	}
-	//	// handle key event
-	//	fmt.Println(string(r))
-	//
-	//}
 
 	// ------------------
 
@@ -67,7 +58,6 @@ func main() {
 				}
 			}()
 
-
 			breakTime := *shortPtr
 			sessionCount++
 			totalSessionCount++
@@ -78,6 +68,8 @@ func main() {
 				breakTime = *longPtr
 			}
 			breakTimer(breakTime)
+
+
 		}
 
 
