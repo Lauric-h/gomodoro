@@ -7,6 +7,11 @@ Delete when project done
 - [X] Régler départ horloge
 - [X] Régler les long break tous les multiples de 4
 - [X] Ajout temps maximum (60 minutes)
+<<<<<<< HEAD
+=======
+- [] Ecriture texte sur box tcell avec coord 
+- [] Checker si trop d'arguments 
+>>>>>>> quitkey
 - [] logger dans un fichier txt la session
 - [] Ajout style avec Pterm
 - [] Ajout touche pour quitter  
