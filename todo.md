@@ -19,6 +19,7 @@ Delete when project done
 - [] add README
 - [] quitter proprement le programme -> ecrire la duree, sessions etc.
 - [] Refactor - utiliser stdlib time ?
+- [] add godoc
 
 ### Première itération : 
 au lancement, worktimer de 25minutes et pause de 5 min  

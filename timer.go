@@ -43,3 +43,11 @@ func (w WorkSession) WorkTimer() {
 	fmt.Println()
 	fmt.Println("Work session is over, time for a break!")
 }
+
+func (w WorkSession) Pause() {
+	// todo
+}
+
+func (w WorkSession) Stop() {
+	//todo
+}

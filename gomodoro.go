@@ -13,6 +13,10 @@ var (
 )
 
 func main() {
+	fmt.Println("Welcome to Gomodoro!")
+	fmt.Println("Press p to pause the timer")
+	fmt.Println("Press s to stop the timer")
+	fmt.Println("Press c to exit the program")
 
 	// ------------------------
 
@@ -36,10 +40,14 @@ func main() {
 				switch r {
 					case 99:
 						fmt.Println(string(r))
+						fmt.Println("Exiting the program, see you later!")
 						os.Exit(1)
 					case 112:
 						fmt.Println(string(r))
-						fmt.Println("pause")
+						fmt.Println("Timer paused")
+						fmt.Println("Stopping the clock, what do you want to do?")
+						// Todo - add menu to start over
+						// Todo - add menu to continue
 				}
 			}()
 
