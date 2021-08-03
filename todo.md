@@ -8,7 +8,8 @@ Delete when project done
 - [X] Régler les long break tous les multiples de 4
 - [X] Ajout temps maximum (60 minutes)rd 
 - [X] Checker si trop d'arguments
-- [] logger dans un fichier txt la session
+- [X] logger dans un fichier txt la session
+- [] Add total time dans le logger  
 - [] Ajout style avec Pterm
 - [X] Ajout touche pour quitter  
 - [] Ajout touche pour arreter  ?
