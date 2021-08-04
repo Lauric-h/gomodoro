@@ -1,0 +1,233 @@
+03-08-2021 20:13:57
+03-08-2021 20:19:09
+03-08-2021 20:22:27
+03-08-2021 20:23:28
+Number of sessions: 1
+ Work time: 2 minutes
+ Break time: 2 minutes
+------------------------------
+03-08-2021 20:30:08
+03-08-2021 20:30:39
+03-08-2021 20:31:54
+03-08-2021 20:32:22
+03-08-2021 20:35:18
+03-08-2021 20:38:05
+Number of sessions: 2
+ Work time: 2 minutes
+ Break time: 2 minutes
+------------------------------
+03-08-2021 20:40:42
+Number of sessions: 1
+ Work time: 2 minutes
+ Break time: 2 minutes
+------------------------------
+04-08-2021 07:17:04
+Number of sessions: 2
+ Work time: 2 minutes
+ Break time: 2 minutes
+------------------------------
+04-08-2021 07:18:25
+Number of sessions: 1
+ Work time: 2 minutes
+ Break time: 2 minutes
+------------------------------
+04-08-2021 07:18:46
+Number of sessions: 2
+ Work time: 2 minutes
+ Break time: 2 minutes
+------------------------------
+04-08-2021 07:39:10
+Number of sessions: 1
+ Work time: 2 minutes
+ Break time: 2 minutes
+------------------------------
+04-08-2021 07:40:33
+Number of sessions: 1
+ Work time: 2 minutes
+ Break time: 2 minutes
+------------------------------
+04-08-2021 07:41:07
+Number of sessions: 1
+ Work time: 2 minutes
+ Break time: 2 minutes
+------------------------------
+04-08-2021 07:42:35
+Number of sessions: 1
+ Work time: 2 minutes
+ Break time: 2 minutes
+------------------------------
+04-08-2021 07:45:18
+Number of sessions: 1
+ Work time: 2 minutes
+ Break time: 2 minutes
+------------------------------
+04-08-2021 07:45:32
+Number of sessions: 1
+ Work time: 2 minutes
+ Break time: 2 minutes
+------------------------------
+04-08-2021 07:45:59
+Number of sessions: 1
+ Work time: 2 minutes
+ Break time: 2 minutes
+------------------------------
+04-08-2021 07:48:39
+Number of sessions: 1
+ Work time: 2 minutes
+ Break time: 2 minutes
+------------------------------
+04-08-2021 07:49:22
+Number of sessions: 1
+ Work time: 2 minutes
+ Break time: 2 minutes
+------------------------------
+04-08-2021 07:49:51
+Number of sessions: 1
+ Work time: 2 minutes
+ Break time: 2 minutes
+------------------------------
+04-08-2021 07:50:08
+Number of sessions: 1
+ Work time: 2 minutes
+ Break time: 2 minutes
+------------------------------
+04-08-2021 07:51:54
+Number of sessions: 1
+ Work time: 2 minutes
+ Break time: 2 minutes
+------------------------------
+04-08-2021 07:52:16
+Number of sessions: 1
+ Work time: 2 minutes
+ Break time: 2 minutes
+------------------------------
+04-08-2021 07:53:02
+Number of sessions: 1
+ Work time: 2 minutes
+ Break time: 2 minutes
+------------------------------
+04-08-2021 07:54:57
+Number of sessions: 1
+ Work time: 2 minutes
+ Break time: 2 minutes
+------------------------------
+04-08-2021 07:56:17
+Number of sessions: 1
+ Work time: 2 minutes
+ Break time: 2 minutes
+------------------------------
+04-08-2021 07:57:25
+Number of sessions: 1
+ Work time: 2 minutes
+ Break time: 2 minutes
+------------------------------
+04-08-2021 07:57:50
+Number of sessions: 2
+ Work time: 2 minutes
+ Break time: 2 minutes
+------------------------------
+04-08-2021 07:58:40
+Number of sessions: 1
+ Work time: 2 minutes
+ Break time: 2 minutes
+------------------------------
+04-08-2021 08:01:53
+Number of sessions: 2
+ Work time: 2 minutes
+ Break time: 2 minutes
+------------------------------
+04-08-2021 08:03:52
+Number of sessions: 2
+ Work time: 2 minutes
+ Break time: 2 minutes
+------------------------------
+04-08-2021 08:04:48
+Number of sessions: 2
+ Work time: 2 minutes
+ Break time: 2 minutes
+------------------------------
+04-08-2021 08:06:15
+Number of sessions: 2
+ Work time: 2 minutes
+ Break time: 2 minutes
+------------------------------
+04-08-2021 08:07:44
+Number of sessions: 2
+ Work time: 2 minutes
+ Break time: 2 minutes
+------------------------------
+04-08-2021 08:08:27
+Number of sessions: 3
+ Work time: 2 minutes
+ Break time: 2 minutes
+------------------------------
+04-08-2021 08:10:23
+Number of sessions: 2
+ Work time: 2 minutes
+ Break time: 2 minutes
+------------------------------
+04-08-2021 08:12:30
+Number of sessions: 1
+ Work time: 2 minutes
+ Break time: 2 minutes
+------------------------------
+04-08-2021 08:12:47
+Number of sessions: 1
+ Work time: 2 minutes
+ Break time: 2 minutes
+------------------------------
+04-08-2021 08:12:59
+Number of sessions: 2
+ Work time: 2 minutes
+ Break time: 2 minutes
+------------------------------
+04-08-2021 08:14:28
+Number of sessions: 1
+ Work time: 2 minutes
+ Break time: 2 minutes
+------------------------------
+04-08-2021 08:15:03
+Number of sessions: 2
+ Work time: 2 minutes
+ Break time: 2 minutes
+------------------------------
+04-08-2021 08:17:16
+Number of sessions: 1
+ Work time: 2 minutes
+ Break time: 2 minutes
+------------------------------
+04-08-2021 08:20:23
+Number of sessions: 1
+ Work time: 2 minutes
+ Break time: 2 minutes
+------------------------------
+04-08-2021 08:23:01
+Number of sessions: 1
+ Work time: 2 minutes
+ Break time: 2 minutes
+------------------------------
+04-08-2021 08:24:35
+Number of sessions: 1
+ Work time: 2 minutes
+ Break time: 2 minutes
+------------------------------
+04-08-2021 08:25:35
+Number of sessions: 2
+ Work time: 2 minutes
+ Break time: 2 minutes
+------------------------------
+04-08-2021 08:27:17
+Number of sessions: 1
+ Work time: 2 minutes
+ Break time: 2 minutes
+------------------------------
+04-08-2021 08:28:53
+Number of sessions: 1
+ Work time: 2 minutes
+ Break time: 2 minutes
+------------------------------
+04-08-2021 08:29:40
+Number of sessions: 2
+ Work time: 2 minutes
+ Break time: 2 minutes
+------------------------------

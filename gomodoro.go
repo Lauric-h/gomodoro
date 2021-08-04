@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"github.com/mattn/go-tty"
+	"github.com/pterm/pterm"
 	"log"
 	"os"
 	"time"
@@ -14,10 +15,26 @@ var (
 )
 
 func main() {
-	fmt.Println("Welcome to Gomodoro!")
-	fmt.Println("Press p to pause the timer")
-	fmt.Println("Press s to stop the timer")
-	fmt.Println("Press c to exit the program")
+	gomoLogo, _ := pterm.DefaultBigText.WithLetters(
+		pterm.NewLettersFromStringWithStyle("Gomodoro", pterm.NewStyle(pterm.FgLightCyan))).
+		Srender()
+
+	pterm.DefaultCenter.Print(gomoLogo)
+	pterm.Info.Println("Welcome to Gomodoro!")
+	pterm.Info.Println("Press p to pause the timer")
+	pterm.Info.Println("Press s to stop the timer")
+	pterm.Info.Println("Press c to exit the program")
+	pterm.Error.Prefix = pterm.Prefix{
+		Text: "WORK",
+		Style: pterm.NewStyle(pterm.BgRed, pterm.FgBlack),
+	}
+	pterm.Error.Println("Red is for work")
+	pterm.Success.Prefix = pterm.Prefix{
+		Text: "BREAK",
+		Style: pterm.NewStyle(pterm.BgGreen, pterm.FgBlack),
+	}
+	pterm.Success.Println("Green is for breaks")
+	pterm.Print("\n\n")
 
 	// ------------------------
 	// Get current date
@@ -33,6 +50,7 @@ func main() {
 		writeLineToFile(formattedDate)
 	}
 
+
 	// --------------------
 
 	// Open keypress listener
@@ -44,6 +62,9 @@ func main() {
 
 	// ------------------
 	// Main loop
+
+	area, _ := pterm.DefaultArea.WithCenter().WithRemoveWhenDone(true).Start()
+
 	for {
 		go func() {
 			r, err := tity.ReadRune()
@@ -56,7 +77,7 @@ func main() {
 			// c - saving to log & exit program
 			case 99:
 				appendLineToFile(formatLogInfo(w.count, w.workTime, w.shortBreak))
-				fmt.Println("Exiting the program, see you later!")
+				pterm.Info.Println("Exiting the program, see you later!")
 				os.Exit(1)
 			// p - pausing timer
 			case 112:
@@ -71,12 +92,12 @@ func main() {
 		breakTime := w.shortBreak
 		sessionCount++
 		w.count++
-		fmt.Println("Session number ", w.count)
-		w.WorkTimer()
+		w.WorkTimer(*area)
 		if sessionCount == 4 {
 			sessionCount = 0
 			breakTime = w.longBreak
 		}
-		w.BreakTimer(breakTime)
+		w.BreakTimer(breakTime, *area)
+		area.Stop()
 	}
 }

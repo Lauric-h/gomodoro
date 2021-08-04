@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"io/ioutil"
 	"log"
 	"os"
@@ -11,10 +10,8 @@ import (
 func checkForLogFile() bool {
 	_, err := os.Stat("temp.txt")
 	if os.IsNotExist(err) {
-		fmt.Println("File does not exist. Creating one...")
 		return false
 	}
-	fmt.Println("File exists. Adding log to it...")
 	return true
 }
 

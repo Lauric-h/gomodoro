@@ -9,19 +9,21 @@ Delete when project done
 - [X] Ajout temps maximum (60 minutes)rd 
 - [X] Checker si trop d'arguments
 - [X] logger dans un fichier txt la session
+- [X] Ajout touche pour quitter  
 - [] Add total time dans le logger  
 - [] Ajout style avec Pterm
-- [X] Ajout touche pour quitter  
 - [] Ajout touche pour arreter  ?
 - [] Ajout touche pour mettre en pause/restart  
 - [] add flags/subcommand pour temps total
 - [X] add flags/subcommand pour temps de pause
 - [X] add flags/subcommand pour temps de travail
+- [] add subcommand pour voir stats
+- [] styliser les stats 
 - [] add README
-- [] quitter proprement le programme -> ecrire la duree, sessions etc.
 - [] Refactor - utiliser stdlib time ?
 - [] add godoc
-
+- [] Add flag -help
+ 
 ### Première itération : 
 au lancement, worktimer de 25minutes et pause de 5 min  
 Ajout des long break
@@ -39,7 +41,7 @@ Définir un temps total au démarrage
 Possibilité d'afficher les logs/stats  
 
 ### Quatrième itération
-Ajout alertes/notif + possibilité de disables
+Ajout alertes/notif + possibilité de disable
 Style avec Pterm
 Ajout help
 
