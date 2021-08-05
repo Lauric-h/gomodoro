@@ -11,7 +11,7 @@ Delete when project done
 - [X] logger dans un fichier txt la session
 - [X] Ajout touche pour quitter  
 - [] Add total time dans le logger  
-- [] Ajout style avec Pterm
+- [X] Ajout style avec Pterm
 - [] Ajout touche pour arreter  ?
 - [] Ajout touche pour mettre en pause/restart  
 - [] add flags/subcommand pour temps total
@@ -21,8 +21,8 @@ Delete when project done
 - [] styliser les stats 
 - [] add README
 - [] Refactor - utiliser stdlib time ?
+- [] Refactor les fonctions de timer  
 - [] add godoc
-- [] Add flag -help
  
 ### Première itération : 
 au lancement, worktimer de 25minutes et pause de 5 min  

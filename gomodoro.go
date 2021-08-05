@@ -15,27 +15,8 @@ var (
 )
 
 func main() {
-	gomoLogo, _ := pterm.DefaultBigText.WithLetters(
-		pterm.NewLettersFromStringWithStyle("Gomodoro", pterm.NewStyle(pterm.FgLightCyan))).
-		Srender()
-
-	pterm.DefaultCenter.Print(gomoLogo)
-	pterm.Info.Println("Welcome to Gomodoro!")
-	pterm.Info.Println("Press p to pause the timer")
-	pterm.Info.Println("Press s to stop the timer")
-	pterm.Info.Println("Press c to exit the program")
-	pterm.Error.Prefix = pterm.Prefix{
-		Text: "WORK",
-		Style: pterm.NewStyle(pterm.BgRed, pterm.FgBlack),
-	}
-	pterm.Error.Println("Red is for work")
-	pterm.Success.Prefix = pterm.Prefix{
-		Text: "BREAK",
-		Style: pterm.NewStyle(pterm.BgGreen, pterm.FgBlack),
-	}
-	pterm.Success.Println("Green is for breaks")
-	pterm.Print("\n\n")
-
+	introLogo()
+	printInfo()
 	// ------------------------
 	// Get current date
 	date := time.Now()
@@ -49,7 +30,6 @@ func main() {
 		// Create and write to new file
 		writeLineToFile(formattedDate)
 	}
-
 
 	// --------------------
 
