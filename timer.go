@@ -7,57 +7,61 @@ import (
 )
 
 type WorkSession struct {
-	shortBreak	int
-	longBreak 	int
-	workTime 		int
-	count 			int
+	shortBreak int
+	longBreak  int
+	workTime   int
+	count      int
+	start      string
+	end        string
 }
 
-func (w WorkSession) BreakTimer(breakTime int, area pterm.AreaPrinter) {
-	str := fmt.Sprintf("Starting %d minutes break...\n", breakTime)
-	displayHeader(area, pterm.FgBlack, pterm.BgGreen, str)
-
-	timerStr := fmt.Sprintf("%02d:00", breakTime)
-	area.Update(createBigLetters(timerStr, pterm.FgGreen))
+/**
+timer launches timer with big letters
+ */
+func (w WorkSession) timer(area pterm.AreaPrinter, usedTimer int, color pterm.Color) {
+	timerStr := fmt.Sprintf("%02d:00", usedTimer)
+	area.Update(createBigLetters(timerStr, color))
 	time.Sleep(time.Second)
 
-	remainingTime := breakTime - 1
-	for remainingTime >= 0 {
-		for i := 2; i >= 0; i-- {
-			timerStr := fmt.Sprintf("%02d:%02d", remainingTime, i)
-			area.Update(createBigLetters(timerStr, pterm.FgGreen))
-			time.Sleep(time.Second)
-		}
-		remainingTime--
-	}
-	displayHeader(area, pterm.FgBlack, pterm.BgGreen, "Break is over, get back to work")
-}
-
-func (w WorkSession) WorkTimer(area pterm.AreaPrinter) {
-	str := fmt.Sprintf("Starting %d minutes work session...\n", w.workTime)
-	displayHeader(area, pterm.FgBlack, pterm.BgRed, str)
-
-	timerStr := fmt.Sprintf("%02d:00", w.workTime)
-	area.Update(createBigLetters(timerStr, pterm.FgRed))
-	time.Sleep(time.Second)
-
-	remainingTime := w.workTime - 1
+	remainingTime := usedTimer - 1
 	for remainingTime >= 0 {
 		for i := 10; i >= 0; i-- {
 			timerStr := fmt.Sprintf("%02d:%02d", remainingTime, i)
-			area.Update(createBigLetters(timerStr, pterm.FgRed))
+			area.Update(createBigLetters(timerStr, color))
 			time.Sleep(time.Second)
 		}
 		remainingTime--
 	}
-
-	displayHeader(area, pterm.FgBlack, pterm.BgRed, "Work session is over, time for a break!")
 }
 
-func (w WorkSession) Pause() {
-	// todo
+/**
+timerSession full session with displays depending on work or break
+ */
+func (w WorkSession) timerSession(timerType string, area pterm.AreaPrinter, breakTime int) {
+	// Default values
+	usedTimer := 0
+	fgColor := pterm.FgBlack
+	bgColor := pterm.BgBlack
+
+	if timerType == "break" {
+		usedTimer = breakTime
+		fgColor = pterm.FgGreen
+		bgColor = pterm.BgGreen
+		w.start = fmt.Sprintf("Starting %d minutes break...\n", breakTime)
+		w.end = "Break is over, get back to work"
+	}
+	if timerType == "work" {
+		usedTimer = w.workTime
+		fgColor = pterm.FgRed
+		bgColor = pterm.BgRed
+		w.start = fmt.Sprintf("Starting %d minutes work session...\n", w.workTime)
+		w.end = "Work session is over, time to take a break"
+	}
+
+	displayHeader(area, bgColor, w.start)
+
+	w.timer(area, usedTimer, fgColor)
+
+	displayHeader(area, bgColor, w.end)
 }
 
-func (w WorkSession) Stop() {
-	//todo
-}

@@ -372,3 +372,31 @@ Number of sessions: 7
  Work time: 2 minutes
  Break time: 2 minutes
 ------------------------------
+05-08-2021 08:15:06
+05-08-2021 08:15:17
+07-08-2021 12:40:42
+Number of sessions: 1
+ Work time: 3 minutes
+ Break time: 2 minutes
+------------------------------
+07-08-2021 13:28:58
+Number of sessions: 2
+ Work time: 2 minutes
+ Break time: 2 minutes
+------------------------------
+07-08-2021 13:36:25
+Number of sessions: 2
+ Work time: 2 minutes
+ Break time: 2 minutes
+------------------------------
+07-08-2021 13:46:05
+07-08-2021 13:49:20
+Number of sessions: 1
+ Work time: 2 minutes
+ Break time: 2 minutes
+------------------------------
+07-08-2021 14:12:29
+Number of sessions: 1
+ Work time: 2 minutes
+ Break time: 2 minutes
+------------------------------

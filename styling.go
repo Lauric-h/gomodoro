@@ -6,8 +6,6 @@ import (
 	"time"
 )
 
-
-
 func introLogo() {
 	gomoLogo, _ := pterm.DefaultBigText.WithLetters(
 		pterm.NewLettersFromStringWithStyle("G", pterm.NewStyle(getRandomColor())),
@@ -24,8 +22,6 @@ func introLogo() {
 }
 
 func printInfo() {
-	pterm.Info.Println("Press p to pause the timer")
-	pterm.Info.Println("Press s to stop the timer")
 	pterm.Info.Println("Press c to exit the program")
 	pterm.Info.Println("Launch program with \"gomo stats\" to see your stats")
 	pterm.Error.Prefix = pterm.Prefix{
@@ -48,16 +44,16 @@ func createBigLetters(str string, color pterm.Color) string {
 	return bigTimer
 }
 
-func createHeader(fgColor pterm.Color, bgColor pterm.Color) pterm.HeaderPrinter {
+func createHeader(bgColor pterm.Color) pterm.HeaderPrinter {
 	return pterm.HeaderPrinter{
-		TextStyle: pterm.NewStyle(fgColor),
+		TextStyle: pterm.NewStyle(pterm.FgBlack),
 		BackgroundStyle: pterm.NewStyle(bgColor),
 		Margin: 15,
 	}
 }
 
-func displayHeader(area pterm.AreaPrinter, fgColor pterm.Color, bgColor pterm.Color, str string) {
-	newHeader := createHeader(fgColor, bgColor)
+func displayHeader(area pterm.AreaPrinter, bgColor pterm.Color, str string) {
+	newHeader := createHeader(bgColor)
 	h := newHeader.Sprintf(str)
 	area.Update(h)
 	time.Sleep(time.Second * 3)
@@ -78,4 +74,6 @@ func getRandomColor() pterm.Color {
 	r := rand.Intn(len(colors)-1)
 	return colors[r]
 }
+
+
 

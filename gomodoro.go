@@ -42,13 +42,11 @@ func main() {
 
 	// ------------------
 	// Main loop
-
 	area, _ := pterm.DefaultArea.WithCenter().WithRemoveWhenDone(true).Start()
 
 	for {
 		go func() {
 			r, err := tity.ReadRune()
-			fmt.Println(r)
 			if err != nil {
 				fmt.Println(err)
 			}
@@ -59,25 +57,22 @@ func main() {
 				appendLineToFile(formatLogInfo(w.count, w.workTime, w.shortBreak))
 				pterm.Info.Println("Exiting the program, see you later!")
 				os.Exit(1)
-			// p - pausing timer
-			case 112:
-				fmt.Println("Timer paused")
-				fmt.Println("Stopping the clock, what do you want to do?")
-				// Todo - add menu to start over
-				// Todo - add menu to continue
 			}
 		}()
 
-		// todo - put this into func
 		breakTime := w.shortBreak
 		sessionCount++
 		w.count++
-		w.WorkTimer(*area)
+
+		w.timerSession("work", *area, breakTime)
+
 		if sessionCount == 4 {
 			sessionCount = 0
 			breakTime = w.longBreak
 		}
-		w.BreakTimer(breakTime, *area)
+
+		w.timerSession("break", *area, breakTime)
+
 		area.Stop()
 	}
 }
