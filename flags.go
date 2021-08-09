@@ -4,12 +4,13 @@ import (
 	"flag"
 	"fmt"
 	"log"
+	"time"
 )
 
 func init() {
-	workPtr := flag.Duration("work",  25, "Duration of the work session")
-	shortPtr := flag.Duration("short", 5, "Duration of the short breaks")
-	longPtr := flag.Duration("long", 10, "Duration of the long breaks")
+	workPtr := flag.Int("work",  25, "Duration of the work session")
+	shortPtr := flag.Int("short", 5, "Duration of the short breaks")
+	longPtr := flag.Int("long", 10, "Duration of the long breaks")
 
 	flag.Parse()
 
@@ -31,7 +32,7 @@ func init() {
 		log.Fatal("Exiting... Too many arguments")
 	}
 
-	w.shortBreak = *shortPtr
-	w.longBreak = *longPtr
-	w.workTime = *workPtr
+	w.shortBreak = time.Duration(*shortPtr)
+	w.longBreak = time.Duration(*longPtr)
+	w.workTime = time.Duration(*workPtr)
 }
