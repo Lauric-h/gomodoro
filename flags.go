@@ -7,11 +7,9 @@ import (
 )
 
 func init() {
-	workPtr := flag.Duration("work",  2, "Duration of the work session")
-	shortPtr := flag.Duration("short", 2, "Duration of the short breaks")
-	longPtr := flag.Duration("long", 4, "Duration of the long breaks")
-
-
+	workPtr := flag.Duration("work",  25, "Duration of the work session")
+	shortPtr := flag.Duration("short", 5, "Duration of the short breaks")
+	longPtr := flag.Duration("long", 10, "Duration of the long breaks")
 
 	flag.Parse()
 

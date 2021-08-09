@@ -8,7 +8,7 @@ import (
 )
 
 func checkForLogFile() bool {
-	_, err := os.Stat("temp.txt")
+	_, err := os.Stat("sessions.txt")
 	if os.IsNotExist(err) {
 		return false
 	}
@@ -16,14 +16,14 @@ func checkForLogFile() bool {
 }
 
 func writeLineToFile(str string) {
-	err := ioutil.WriteFile("temp.txt", []byte(str + "\n"), 0644)
+	err := ioutil.WriteFile("sessions.txt", []byte(str + "\n"), 0644)
 	if err != nil {
 		log.Fatal(err)
 	}
 }
 
 func appendLineToFile(str string) {
-	file, err := os.OpenFile("temp.txt", os.O_APPEND|os.O_WRONLY, 0644)
+	file, err := os.OpenFile("sessions.txt", os.O_APPEND|os.O_WRONLY, 0644)
 	if err != nil {
 		log.Println(err)
 	}
