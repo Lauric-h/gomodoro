@@ -15,13 +15,14 @@ gomodoro -work=15 -short=2 -long=4
 ```
 
 Hit "c" to stop the app, this will log your work session into a sessions.txt file.
+
 ```
 09-08-2021 21:59:52
 Number of sessions: 1
  Work time: 25 minutes
  Break time: 5 minutes
 ```
-
+*The file is created where you launch the app*
 
 ## Screenshots
 ![screenshot](./screenshot.png)
