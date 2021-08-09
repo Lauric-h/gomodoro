@@ -400,3 +400,8 @@ Number of sessions: 1
  Work time: 2 minutes
  Break time: 2 minutes
 ------------------------------
+08-08-2021 11:43:19
+Number of sessions: 1
+ Work time: 2 minutes
+ Break time: 2 minutes
+------------------------------

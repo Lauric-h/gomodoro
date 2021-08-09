@@ -17,7 +17,7 @@ var (
 func main() {
 	introLogo()
 	printInfo()
-	// ------------------------
+
 	// Get current date
 	date := time.Now()
 	formattedDate := fmt.Sprintf(date.Format("02-01-2006 15:04:05"))
@@ -31,8 +31,6 @@ func main() {
 		writeLineToFile(formattedDate)
 	}
 
-	// --------------------
-
 	// Open keypress listener
 	tity, err := tty.Open()
 	if err != nil {
@@ -40,7 +38,6 @@ func main() {
 	}
 	defer tity.Close()
 
-	// ------------------
 	// Main loop
 	area, _ := pterm.DefaultArea.WithCenter().WithRemoveWhenDone(true).Start()
 

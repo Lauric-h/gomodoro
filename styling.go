@@ -23,7 +23,6 @@ func introLogo() {
 
 func printInfo() {
 	pterm.Info.Println("Press c to exit the program")
-	pterm.Info.Println("Launch program with \"gomo stats\" to see your stats")
 	pterm.Error.Prefix = pterm.Prefix{
 		Text: "WORK",
 		Style: pterm.NewStyle(pterm.BgRed, pterm.FgBlack),
