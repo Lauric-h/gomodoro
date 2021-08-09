@@ -27,46 +27,13 @@ func (w WorkSession) timer(area pterm.AreaPrinter, usedTimer time.Duration, colo
 		currentTime := time.Now()
 		difference := finish.Sub(currentTime)
 		if difference <= 0 {
-			fmt.Println("stop")
 			break
 		}
 
 		o := time.Time{}.Add(difference)
-		fmt.Println(o.Format("04:05"))
+		timerStr := fmt.Sprintf(o.Format("04:05"))
+		area.Update(createBigLetters(timerStr, color))
 	}
-
-
-
-	//timerStr := fmt.Sprintf("%02d:00", usedTimer)
-	//area.Update(createBigLetters(timerStr, color))
-	//time.Sleep(time.Second)
-	//
-	//remainingTime := usedTimer - 1
-	//for remainingTime >= 0 {
-	//	for i := 10; i >= 0; i-- {
-	//		timerStr := fmt.Sprintf("%02d:%02d", remainingTime, i)
-	//		area.Update(createBigLetters(timerStr, color))
-	//		time.Sleep(time.Second)
-	//	}
-	//	remainingTime--
-	//}
-
-	//timerStr := fmt.Sprintf("%02d:00", usedTimer)
-	//area.Update(createBigLetters(timerStr, color))
-	//time.Sleep(time.Second)
-	//
-	//remainingTime := usedTimer - 1
-	//for remainingTime >= 0 {
-	//	for i := 10; i >= 0; i-- {
-	//		timerStr := fmt.Sprintf("%02d:%02d", remainingTime, i)
-	//		area.Update(createBigLetters(timerStr, color))
-	//		time.Sleep(time.Second)
-	//	}
-	//	remainingTime--
-	//}
-
-
-
 }
 
 /**
@@ -100,29 +67,5 @@ func (w WorkSession) timerSession(timerType string, area pterm.AreaPrinter, brea
 	displayHeader(area, bgColor, w.endPhrase)
 }
 
-func waitDuration()  {
-	start := time.Now()
-	minutes := time.Minute * 2
-
-	finish := start.Add(minutes)
-
-	diff := finish.Sub(start)
-	out := time.Time{}.Add(diff)
-	fmt.Println(out.Format("04:05"))
-
-	for range time.Tick(1 * time.Second) {
-		currentTime := time.Now()
-		difference := finish.Sub(currentTime)
-		if difference <= 0 {
-			fmt.Println("stop")
-			break
-		}
-
-		o := time.Time{}.Add(difference)
-		fmt.Println(o.Format("04:05"))
-	}
-
-
-}
 
 

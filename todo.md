@@ -14,6 +14,7 @@ Delete when project done
 - [X] add flags/subcommand pour temps de pause
 - [X] add flags/subcommand pour temps de travail
 - [X] Refactor les fonctions de timer  
+- [X] Refactor - utiliser stdlib time ?
 - [] add README
  
 ### Première itération : 
@@ -43,4 +44,3 @@ Ajout help
 - [] Ajout touche pause/restart
 - [] add subcommand pour voir stats
 - [] styliser les stats 
-- [] Refactor - utiliser stdlib time ?

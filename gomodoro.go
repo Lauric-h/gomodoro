@@ -51,8 +51,7 @@ func main() {
 			switch r {
 			// c - saving to log & exit program
 			case 99:
-				//todo
-				//appendLineToFile(formatLogInfo(w.count, w.workTime, w.shortBreak))
+				appendLineToFile(formatLogInfo(w.count, int(w.workTime), int(w.shortBreak)))
 				pterm.Info.Println("Exiting the program, see you later!")
 				os.Exit(1)
 			}
