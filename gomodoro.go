@@ -20,6 +20,11 @@ func main() {
 	introLogo()
 	printInfo()
 
+	notify = notificator.New(notificator.Options{
+		DefaultIcon: "icon/default.png",
+		AppName:     "Gomodoro",
+	})
+
 	// Get current date
 	date := time.Now()
 	formattedDate := fmt.Sprintf(date.Format("02-01-2006 15:04:05"))
@@ -53,7 +58,7 @@ func main() {
 			switch r {
 			// c - saving to log & exit program
 			case 99:
-				appendLineToFile(formatLogInfo(w.count, w.workTime, w.shortBreak))
+				appendLineToFile(formatLogInfo(w.count, int(w.workTime), int(w.shortBreak)))
 				pterm.Info.Println("Exiting the program, see you later!")
 				os.Exit(1)
 			}
@@ -65,14 +70,12 @@ func main() {
 
 		w.timerSession("work", *area, breakTime)
 
-
 		if sessionCount == 4 {
 			sessionCount = 0
 			breakTime = w.longBreak
 		}
 
 		w.timerSession("break", *area, breakTime)
-		notify.Push("title", "text", "/home/user/icon.png", notificator.UR_CRITICAL)
 
 		area.Stop()
 	}

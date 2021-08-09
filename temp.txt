@@ -1,406 +1,40 @@
-03-08-2021 20:13:57
-03-08-2021 20:19:09
-03-08-2021 20:22:27
-03-08-2021 20:23:28
+09-08-2021 08:55:34
+09-08-2021 09:03:54
 Number of sessions: 1
- Work time: 2 minutes
- Break time: 2 minutes
+ Work time: 00:00 minutes
+ Break time: 00:00 minutes
 ------------------------------
-03-08-2021 20:30:08
-03-08-2021 20:30:39
-03-08-2021 20:31:54
-03-08-2021 20:32:22
-03-08-2021 20:35:18
-03-08-2021 20:38:05
-Number of sessions: 2
- Work time: 2 minutes
- Break time: 2 minutes
-------------------------------
-03-08-2021 20:40:42
+09-08-2021 09:08:56
 Number of sessions: 1
- Work time: 2 minutes
- Break time: 2 minutes
+ Work time: 00:00 minutes
+ Break time: 00:00 minutes
 ------------------------------
-04-08-2021 07:17:04
-Number of sessions: 2
- Work time: 2 minutes
- Break time: 2 minutes
-------------------------------
-04-08-2021 07:18:25
+09-08-2021 09:09:37
 Number of sessions: 1
- Work time: 2 minutes
- Break time: 2 minutes
+ Work time: 00:00 minutes
+ Break time: 00:00 minutes
 ------------------------------
-04-08-2021 07:18:46
-Number of sessions: 2
- Work time: 2 minutes
- Break time: 2 minutes
-------------------------------
-04-08-2021 07:39:10
+09-08-2021 09:13:40
 Number of sessions: 1
- Work time: 2 minutes
- Break time: 2 minutes
+ Work time: 00:00 minutes
+ Break time: 00:00 minutes
 ------------------------------
-04-08-2021 07:40:33
+09-08-2021 09:14:23
 Number of sessions: 1
- Work time: 2 minutes
- Break time: 2 minutes
+ Work time: 00:00 minutes
+ Break time: 00:00 minutes
 ------------------------------
-04-08-2021 07:41:07
+09-08-2021 09:16:09
 Number of sessions: 1
- Work time: 2 minutes
- Break time: 2 minutes
+ Work time: 00:00 minutes
+ Break time: 00:00 minutes
 ------------------------------
-04-08-2021 07:42:35
+09-08-2021 09:18:19
 Number of sessions: 1
- Work time: 2 minutes
- Break time: 2 minutes
+ Work time: 00:00 minutes
+ Break time:  minutes
 ------------------------------
-04-08-2021 07:45:18
-Number of sessions: 1
- Work time: 2 minutes
- Break time: 2 minutes
-------------------------------
-04-08-2021 07:45:32
-Number of sessions: 1
- Work time: 2 minutes
- Break time: 2 minutes
-------------------------------
-04-08-2021 07:45:59
-Number of sessions: 1
- Work time: 2 minutes
- Break time: 2 minutes
-------------------------------
-04-08-2021 07:48:39
-Number of sessions: 1
- Work time: 2 minutes
- Break time: 2 minutes
-------------------------------
-04-08-2021 07:49:22
-Number of sessions: 1
- Work time: 2 minutes
- Break time: 2 minutes
-------------------------------
-04-08-2021 07:49:51
-Number of sessions: 1
- Work time: 2 minutes
- Break time: 2 minutes
-------------------------------
-04-08-2021 07:50:08
-Number of sessions: 1
- Work time: 2 minutes
- Break time: 2 minutes
-------------------------------
-04-08-2021 07:51:54
-Number of sessions: 1
- Work time: 2 minutes
- Break time: 2 minutes
-------------------------------
-04-08-2021 07:52:16
-Number of sessions: 1
- Work time: 2 minutes
- Break time: 2 minutes
-------------------------------
-04-08-2021 07:53:02
-Number of sessions: 1
- Work time: 2 minutes
- Break time: 2 minutes
-------------------------------
-04-08-2021 07:54:57
-Number of sessions: 1
- Work time: 2 minutes
- Break time: 2 minutes
-------------------------------
-04-08-2021 07:56:17
-Number of sessions: 1
- Work time: 2 minutes
- Break time: 2 minutes
-------------------------------
-04-08-2021 07:57:25
-Number of sessions: 1
- Work time: 2 minutes
- Break time: 2 minutes
-------------------------------
-04-08-2021 07:57:50
-Number of sessions: 2
- Work time: 2 minutes
- Break time: 2 minutes
-------------------------------
-04-08-2021 07:58:40
-Number of sessions: 1
- Work time: 2 minutes
- Break time: 2 minutes
-------------------------------
-04-08-2021 08:01:53
-Number of sessions: 2
- Work time: 2 minutes
- Break time: 2 minutes
-------------------------------
-04-08-2021 08:03:52
-Number of sessions: 2
- Work time: 2 minutes
- Break time: 2 minutes
-------------------------------
-04-08-2021 08:04:48
-Number of sessions: 2
- Work time: 2 minutes
- Break time: 2 minutes
-------------------------------
-04-08-2021 08:06:15
-Number of sessions: 2
- Work time: 2 minutes
- Break time: 2 minutes
-------------------------------
-04-08-2021 08:07:44
-Number of sessions: 2
- Work time: 2 minutes
- Break time: 2 minutes
-------------------------------
-04-08-2021 08:08:27
-Number of sessions: 3
- Work time: 2 minutes
- Break time: 2 minutes
-------------------------------
-04-08-2021 08:10:23
-Number of sessions: 2
- Work time: 2 minutes
- Break time: 2 minutes
-------------------------------
-04-08-2021 08:12:30
-Number of sessions: 1
- Work time: 2 minutes
- Break time: 2 minutes
-------------------------------
-04-08-2021 08:12:47
-Number of sessions: 1
- Work time: 2 minutes
- Break time: 2 minutes
-------------------------------
-04-08-2021 08:12:59
-Number of sessions: 2
- Work time: 2 minutes
- Break time: 2 minutes
-------------------------------
-04-08-2021 08:14:28
-Number of sessions: 1
- Work time: 2 minutes
- Break time: 2 minutes
-------------------------------
-04-08-2021 08:15:03
-Number of sessions: 2
- Work time: 2 minutes
- Break time: 2 minutes
-------------------------------
-04-08-2021 08:17:16
-Number of sessions: 1
- Work time: 2 minutes
- Break time: 2 minutes
-------------------------------
-04-08-2021 08:20:23
-Number of sessions: 1
- Work time: 2 minutes
- Break time: 2 minutes
-------------------------------
-04-08-2021 08:23:01
-Number of sessions: 1
- Work time: 2 minutes
- Break time: 2 minutes
-------------------------------
-04-08-2021 08:24:35
-Number of sessions: 1
- Work time: 2 minutes
- Break time: 2 minutes
-------------------------------
-04-08-2021 08:25:35
-Number of sessions: 2
- Work time: 2 minutes
- Break time: 2 minutes
-------------------------------
-04-08-2021 08:27:17
-Number of sessions: 1
- Work time: 2 minutes
- Break time: 2 minutes
-------------------------------
-04-08-2021 08:28:53
-Number of sessions: 1
- Work time: 2 minutes
- Break time: 2 minutes
-------------------------------
-04-08-2021 08:29:40
-Number of sessions: 2
- Work time: 2 minutes
- Break time: 2 minutes
-------------------------------
-04-08-2021 08:40:16
-Number of sessions: 1
- Work time: 2 minutes
- Break time: 2 minutes
-------------------------------
-04-08-2021 08:41:41
-Number of sessions: 1
- Work time: 2 minutes
- Break time: 2 minutes
-------------------------------
-04-08-2021 08:45:34
-Number of sessions: 1
- Work time: 2 minutes
- Break time: 2 minutes
-------------------------------
-04-08-2021 08:47:28
-Number of sessions: 1
- Work time: 2 minutes
- Break time: 2 minutes
-------------------------------
-04-08-2021 08:50:42
-Number of sessions: 1
- Work time: 2 minutes
- Break time: 2 minutes
-------------------------------
-04-08-2021 08:55:24
-Number of sessions: 1
- Work time: 2 minutes
- Break time: 2 minutes
-------------------------------
-04-08-2021 08:59:04
-Number of sessions: 1
- Work time: 2 minutes
- Break time: 2 minutes
-------------------------------
-04-08-2021 08:59:56
-Number of sessions: 1
- Work time: 2 minutes
- Break time: 2 minutes
-------------------------------
-04-08-2021 09:05:09
-Number of sessions: 1
- Work time: 2 minutes
- Break time: 2 minutes
-------------------------------
-04-08-2021 09:09:04
-04-08-2021 09:09:43
-Number of sessions: 1
- Work time: 2 minutes
- Break time: 2 minutes
-------------------------------
-04-08-2021 19:29:41
-05-08-2021 07:30:09
-05-08-2021 07:32:10
-Number of sessions: 1
- Work time: 2 minutes
- Break time: 2 minutes
-------------------------------
-05-08-2021 07:32:41
-Number of sessions: 1
- Work time: 2 minutes
- Break time: 2 minutes
-------------------------------
-05-08-2021 07:36:37
-Number of sessions: 1
- Work time: 2 minutes
- Break time: 2 minutes
-------------------------------
-05-08-2021 07:38:51
-Number of sessions: 2
- Work time: 2 minutes
- Break time: 2 minutes
-------------------------------
-05-08-2021 07:43:38
-Number of sessions: 2
- Work time: 2 minutes
- Break time: 2 minutes
-------------------------------
-05-08-2021 07:47:00
-Number of sessions: 1
- Work time: 2 minutes
- Break time: 2 minutes
-------------------------------
-05-08-2021 07:50:53
-Number of sessions: 5
- Work time: 2 minutes
- Break time: 2 minutes
-------------------------------
-05-08-2021 08:02:43
-05-08-2021 08:02:49
-Number of sessions: 1
- Work time: 2 minutes
- Break time: 2 minutes
-------------------------------
-05-08-2021 08:02:53
-Number of sessions: 1
- Work time: 2 minutes
- Break time: 2 minutes
-------------------------------
-05-08-2021 08:02:57
-Number of sessions: 1
- Work time: 2 minutes
- Break time: 2 minutes
-------------------------------
-05-08-2021 08:03:14
-Number of sessions: 1
- Work time: 2 minutes
- Break time: 2 minutes
-------------------------------
-05-08-2021 08:03:51
-Number of sessions: 1
- Work time: 2 minutes
- Break time: 2 minutes
-------------------------------
-05-08-2021 08:05:22
-05-08-2021 08:05:43
-05-08-2021 08:05:57
-Number of sessions: 1
- Work time: 2 minutes
- Break time: 2 minutes
-------------------------------
-05-08-2021 08:06:21
-Number of sessions: 1
- Work time: 2 minutes
- Break time: 2 minutes
-------------------------------
-05-08-2021 08:07:55
-Number of sessions: 1
- Work time: 2 minutes
- Break time: 2 minutes
-------------------------------
-05-08-2021 08:08:05
-Number of sessions: 1
- Work time: 2 minutes
- Break time: 2 minutes
-------------------------------
-05-08-2021 08:08:25
-Number of sessions: 7
- Work time: 2 minutes
- Break time: 2 minutes
-------------------------------
-05-08-2021 08:15:06
-05-08-2021 08:15:17
-07-08-2021 12:40:42
-Number of sessions: 1
- Work time: 3 minutes
- Break time: 2 minutes
-------------------------------
-07-08-2021 13:28:58
-Number of sessions: 2
- Work time: 2 minutes
- Break time: 2 minutes
-------------------------------
-07-08-2021 13:36:25
-Number of sessions: 2
- Work time: 2 minutes
- Break time: 2 minutes
-------------------------------
-07-08-2021 13:46:05
-07-08-2021 13:49:20
-Number of sessions: 1
- Work time: 2 minutes
- Break time: 2 minutes
-------------------------------
-07-08-2021 14:12:29
-Number of sessions: 1
- Work time: 2 minutes
- Break time: 2 minutes
-------------------------------
-08-08-2021 11:43:19
+09-08-2021 09:20:01
 Number of sessions: 1
  Work time: 2 minutes
  Break time: 2 minutes
@@ -453,6 +87,14 @@ Number of sessions: 1
  Break time: 2 minutes
 ------------------------------
 09-08-2021 07:49:49
+Number of sessions: 1
+ Work time: 2 minutes
+ Break time: 2 minutes
+------------------------------
+09-08-2021 09:27:43
+09-08-2021 09:29:29
+09-08-2021 09:30:45
+09-08-2021 09:31:17
 Number of sessions: 1
  Work time: 2 minutes
  Break time: 2 minutes
