@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"github.com/0xAX/notificator"
 	"github.com/mattn/go-tty"
 	"github.com/pterm/pterm"
 	"log"
@@ -12,6 +13,7 @@ import (
 var (
 	sessionCount = 0
 	w WorkSession
+	notify *notificator.Notificator
 )
 
 func main() {
@@ -63,12 +65,14 @@ func main() {
 
 		w.timerSession("work", *area, breakTime)
 
+
 		if sessionCount == 4 {
 			sessionCount = 0
 			breakTime = w.longBreak
 		}
 
 		w.timerSession("break", *area, breakTime)
+		notify.Push("title", "text", "/home/user/icon.png", notificator.UR_CRITICAL)
 
 		area.Stop()
 	}

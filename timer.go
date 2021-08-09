@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"github.com/0xAX/notificator"
 	"github.com/pterm/pterm"
 	"time"
 )
@@ -32,12 +33,18 @@ func (w WorkSession) timer(area pterm.AreaPrinter, usedTimer int, color pterm.Co
 		}
 		remainingTime--
 	}
+
 }
 
 /**
 timerSession full session with displays depending on work or break
  */
 func (w WorkSession) timerSession(timerType string, area pterm.AreaPrinter, breakTime int) {
+	notify = notificator.New(notificator.Options{
+		DefaultIcon: "icon/default.png",
+		AppName:     "Gomodoro",
+	})
+
 	// Default values
 	usedTimer := 0
 	fgColor := pterm.FgBlack
@@ -59,9 +66,11 @@ func (w WorkSession) timerSession(timerType string, area pterm.AreaPrinter, brea
 	}
 
 	displayHeader(area, bgColor, w.start)
+	notify.Push(timerType, w.start, "" , notificator.UR_CRITICAL)
 
 	w.timer(area, usedTimer, fgColor)
 
 	displayHeader(area, bgColor, w.end)
+	notify.Push(timerType, w.end, "", notificator.UR_CRITICAL)
 }
 
