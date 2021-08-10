@@ -4,6 +4,11 @@ The Pomodoro technique is a time management method that helps you to focus on yo
 [See here for more info](https://en.wikipedia.org/wiki/Pomodoro_Technique).
 
 ## Installation
+You need to have Go installed on your computer.
+To install the binary without the source code, run:
+```
+GOBIN="$(pwd)" go install github.com/Lauric-h/gomodoro@latest
+```
 
 ## Usage
 Simply launch the app and start working. 
