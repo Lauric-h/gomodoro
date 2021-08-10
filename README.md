@@ -36,3 +36,5 @@ Number of sessions: 1
 [Pterm](https://github.com/pterm/pterm#-examples) - A golang module to print pretty text  
 [Notificator](https://github.com/0xAX/notificator) - Desktop notifications  
 [Go-TTY](https://github.com/mattn/go-tty) - Simple tty utility  
+***
+[Find me here](https://lauric.app/)
